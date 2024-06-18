@@ -22,7 +22,7 @@ function App() {
       <button onClick={fetchData} className="bg-amber-500 px-4 py-2">
         click
       </button>
-      <h1>{news ? news.articles[0].authore : "Fetching..."}</h1>
+      <h1>{news ? news.articles[0].author : "Fetching..."}</h1>
     </>
   );
 }
