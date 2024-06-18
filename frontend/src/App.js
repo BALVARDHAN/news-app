@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function App() {
   const [news, setNews] = useState();
-  const url = "https://news-app-api-pearl.vercel.app/fetch";
+  const url = "https://news-app-api-wheat.vercel.app/fetch";
 
   function fetchData() {
     fetch(url, {
