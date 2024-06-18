@@ -6,7 +6,13 @@ function App() {
   const url = "https://news-app-api-pearl.vercel.app/fetch";
 
   function fetchData() {
-    fetch(url)
+    fetch(url, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => res.json())
       .then((data) => setNews(data));
   }
