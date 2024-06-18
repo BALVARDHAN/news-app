@@ -2,7 +2,12 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+const options = {
+  origin : "https://news-app-kohl-omega.vercel.app",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(options));
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
